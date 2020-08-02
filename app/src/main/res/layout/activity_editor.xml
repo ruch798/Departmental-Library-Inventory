@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/editor_main_linear_layout_padding">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/product_overview"
+            style="@style/EditorLabel"
+            android:text="@string/label_product_overview" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_product_name"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/product_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_product_subject"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <EditText
+                android:id="@+id/product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_price"
+                android:inputType="number"
+                android:maxLength="9"/>
+
+            <EditText
+                android:id="@+id/uniquebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_uniquebook"
+                android:inputType="phone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/subtract_quantity"
+                    android:layout_width="@dimen/add_subtract_button_size"
+                    android:layout_height="@dimen/add_subtract_button_size"
+                    android:text="@string/button_minus_sign"
+                    android:textAppearance="?android:textAppearanceLarge"/>
+
+
+                <EditText
+                    android:id="@+id/product_quantity"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_quantity"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="3"/>
+
+
+                <Button
+                    android:id="@+id/add_quantity"
+                    android:layout_width="@dimen/add_subtract_button_size"
+                    android:layout_height="@dimen/add_subtract_button_size"
+                    android:text="@string/button_plus_sign"
+                    android:textAppearance="?android:textAppearanceLarge"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/borrow1"
+                    android:layout_width="@dimen/add_subtract_button_size"
+                    android:layout_height="@dimen/add_subtract_button_size"
+                    android:text="Borrow"
+                    android:textAppearance="?android:textAppearanceLarge"/>
+
+
+                <EditText
+                    android:id="@+id/product_borrow"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Borrowed"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="3"/>
+
+
+                <Button
+                    android:id="@+id/return1"
+                    android:layout_width="@dimen/add_subtract_button_size"
+                    android:layout_height="@dimen/add_subtract_button_size"
+                    android:text="Return"
+                    android:textAppearance="?android:textAppearanceLarge"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/overivew_spacing_margin_top"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/supplier_overview"
+            style="@style/EditorLabel"
+            android:text="@string/label_supplier_overview" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/supplier_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_supplier_name" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_view_data"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+</LinearLayout>

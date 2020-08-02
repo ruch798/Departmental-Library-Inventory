@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_background"
+    android:padding="@dimen/list_item_padding">
+
+    <TextView
+        android:id="@+id/display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+         />
+
+    <TextView
+        android:id="@+id/display_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_name"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:id="@+id/uniqueId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_subject"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorWhite"
+         />
+
+    <TextView
+        android:id="@+id/label_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uniqueId"
+        android:text="@string/label_price"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorWhite" />
+
+
+
+    <TextView
+        android:id="@+id/display_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/label_price"
+        android:layout_below="@id/display_name"
+        android:layout_marginStart="@dimen/list_item_display_price_left_margin"
+        android:layout_marginLeft="@dimen/list_item_display_price_left_margin"
+        android:layout_toEndOf="@id/label_price"
+        android:layout_toRightOf="@id/label_price"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorWhite"
+        tools:text="273" />
+
+    <TextView
+        android:id="@+id/for_single_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_price"
+        android:text="@string/price_for_single_item"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorWhite" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/display_quantity"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@id/label_quantity"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@id/display_name"-->
+        <!--android:layout_marginStart="@dimen/list_item_display_quantity_left_margin"-->
+        <!--android:layout_marginLeft="@dimen/list_item_display_quantity_left_margin"-->
+        <!--android:textAppearance="?android:textAppearanceMedium"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--tools:text="120" />-->
+
+
+
+
+
+</RelativeLayout>

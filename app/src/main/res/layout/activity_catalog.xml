@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Here"
+        android:iconifiedByDefault="false"
+        android:layout_alignParentTop="true"/>
+    <ListView
+        android:layout_below="@+id/searchView"
+        android:id="@+id/list_view_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/empty_shelter_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/product_pile"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_shelter_image"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:paddingTop="@dimen/empty_view_textview_padding_top"
+            android:text="@string/empty_view_textview"
+            android:textAppearance="?android:textAppearanceSmall" />
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/insert_product_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/floating_button_margin"
+        app:srcCompat="@drawable/add_product"
+
+        />
+
+</RelativeLayout>
